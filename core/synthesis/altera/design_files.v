@@ -48,8 +48,12 @@
    `include "../src/megawizard/cyclone3_dmem.v"
 `endif
 `ifdef CYCLONE_IV_GX
-   `include "../src/megawizard/cyclone4gx_pmem.v"
-   `include "../src/megawizard/cyclone4gx_dmem.v"
+ `include "../src/megawizard/cyclone4gx_pmem.v"
+ `include "../src/megawizard/cyclone4gx_dmem.v"
+`endif
+`ifdef CYCLONE_V
+ `include "../src/megawizard/cyclone5_pmem.v"
+ `include "../src/megawizard/cyclone5_dmem.v"
 `endif
 `ifdef ARRIA_GX
    `include "../src/megawizard/arriagx_pmem.v"

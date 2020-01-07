@@ -1,3 +1,2 @@
 
-`define CYCLONE_II
-
+`define CYCLONE_V
