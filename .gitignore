@@ -2,3 +2,24 @@ build/
 *~
 *.swp
 *.swo
+
+# Quartus compiled FPGA
+fpga/altera_de10_standard/synthesis/altera/db/
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.asm.rpt
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.done
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.fit.rpt
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.fit.smsg
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.fit.summary
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.flow.rpt
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.jdi
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.map.rpt
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.map.smsg
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.map.summary
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.pin
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.sld
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.sof
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.srf
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.sta.rpt
+fpga/altera_de10_standard/synthesis/altera/DE10_Standard.sta.summary
+fpga/altera_de10_standard/synthesis/altera/c5_pin_model_dump.txt
+fpga/altera_de10_standard/synthesis/altera/incremental_db/
