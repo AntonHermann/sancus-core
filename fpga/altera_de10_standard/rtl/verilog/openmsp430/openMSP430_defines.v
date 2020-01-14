@@ -100,7 +100,7 @@
 
 
 // Include/Exclude Serial Debug interface
-//`define DBG_EN
+`define DBG_EN
 
 
 //============================================================================
