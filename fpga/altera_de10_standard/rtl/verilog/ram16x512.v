@@ -4,7 +4,7 @@
 // MODULE: altsyncram 
 
 // ============================================================
-// File Name: ram.v
+// File Name: ram16x512.v
 // Megafunction Name(s):
 // 			altsyncram
 //
