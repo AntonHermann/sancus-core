@@ -629,3 +629,4 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SEARCH_PATH ../../rtl/verilog/openmsp430/periph
 set_global_assignment -name SEARCH_PATH ../../rtl/verilog/openmsp430
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE ../../rtl/verilog/ram16x512.qip
