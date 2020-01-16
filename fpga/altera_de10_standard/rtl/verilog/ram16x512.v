@@ -53,6 +53,7 @@ module ram16x512 (
 	input	[15:0]  data;
 	input	  wren;
 	output	[15:0]  q;
+////////// not in DE1 //////////
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
@@ -62,17 +63,18 @@ module ram16x512 (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
+////////// not in DE1 END //////////
 
 	wire [15:0] sub_wire0;
 	wire [15:0] q = sub_wire0[15:0];
 
 	altsyncram	altsyncram_component (
-				.address_a (address),
-				.byteena_a (byteena),
+                .clocken0 (clken),
+                .wren_a (wren),
 				.clock0 (clock),
-				.clocken0 (clken),
+				.byteena_a (byteena),
+				.address_a (address),
 				.data_a (data),
-				.wren_a (wren),
 				.q_a (sub_wire0),
 				.aclr0 (1'b0),
 				.aclr1 (1'b0),
@@ -93,17 +95,22 @@ module ram16x512 (
 	defparam
 		altsyncram_component.byte_size = 8,
 		altsyncram_component.clock_enable_input_a = "NORMAL",
-		altsyncram_component.clock_enable_output_a = "NORMAL",
+// old from DE1
+//        altsyncram_component.clock_enable_output_a = "BYPASS",
+	    altsyncram_component.clock_enable_output_a = "NORMAL",
 		altsyncram_component.intended_device_family = "Cyclone V",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",
 		altsyncram_component.numwords_a = 512,
 		altsyncram_component.operation_mode = "SINGLE_PORT",
 		altsyncram_component.outdata_aclr_a = "NONE",
+// old from DE1
 //		altsyncram_component.outdata_reg_a = "UNREGISTERED",
 		altsyncram_component.outdata_reg_a = "CLOCK0",
 		altsyncram_component.power_up_uninitialized = "FALSE",
+////////// not in DE1 //////////
 		altsyncram_component.read_during_write_mode_port_a = "NEW_DATA_NO_NBE_READ",
+////////// not in DE1 END //////////
 		altsyncram_component.widthad_a = 9,
 		altsyncram_component.width_a = 16,
 		altsyncram_component.width_byteena_a = 2;
