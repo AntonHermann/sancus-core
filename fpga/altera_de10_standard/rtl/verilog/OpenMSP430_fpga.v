@@ -86,7 +86,7 @@ module DE10_Standard (
 	input 		          		IRDA_RXD,
 	output		          		IRDA_TXD,
 
-//	//////////// HPS //////////
+	//////////// HPS //////////
 //	inout 		          		HPS_CONV_USB_N,
 //	output		    [14:0]		HPS_DDR3_ADDR,
 //	output		     [2:0]		HPS_DDR3_BA,
@@ -126,7 +126,7 @@ module DE10_Standard (
 //	inout 		          		HPS_LCM_BK,
 //	inout 		          		HPS_LCM_D_C,
 //	inout 		          		HPS_LCM_RST_N,
-//	output		          		HPS_LCM_SPIM_CLK,
+//  output		          		HPS_LCM_SPIM_CLK,
 //	input 		          		HPS_LCM_SPIM_MISO,
 //	output		          		HPS_LCM_SPIM_MOSI,
 //	output		          		HPS_LCM_SPIM_SS,
