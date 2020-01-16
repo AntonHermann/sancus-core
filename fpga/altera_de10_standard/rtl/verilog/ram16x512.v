@@ -177,10 +177,10 @@ endmodule
 // Retrieval info: CONNECT: @data_a 0 0 16 0 data 0 0 16 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 16 0 @q_a 0 0 16 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512_bb.v FALSE
 // Retrieval info: LIB_FILE: altera_mf
