@@ -71,8 +71,8 @@ module ram16x512 (
 	altsyncram	altsyncram_component (
                 .clocken0 (clken),
                 .wren_a (wren),
-				.clock0 (clock),
-				.byteena_a (byteena),
+                .clock0 (clock),
+                .byteena_a (byteena),
 				.address_a (address),
 				.data_a (data),
 				.q_a (sub_wire0),
@@ -95,9 +95,7 @@ module ram16x512 (
 	defparam
 		altsyncram_component.byte_size = 8,
 		altsyncram_component.clock_enable_input_a = "NORMAL",
-// old from DE1
-//        altsyncram_component.clock_enable_output_a = "BYPASS",
-	    altsyncram_component.clock_enable_output_a = "NORMAL",
+		altsyncram_component.clock_enable_output_a = "BYPASS",
 		altsyncram_component.intended_device_family = "Cyclone V",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",
@@ -105,12 +103,11 @@ module ram16x512 (
 		altsyncram_component.operation_mode = "SINGLE_PORT",
 		altsyncram_component.outdata_aclr_a = "NONE",
 // old from DE1
-//		altsyncram_component.outdata_reg_a = "UNREGISTERED",
-		altsyncram_component.outdata_reg_a = "CLOCK0",
+//	    altsyncram_component.outdata_reg_a = "UNREGISTERED",
+	    altsyncram_component.outdata_reg_a = "CLOCK0",
 		altsyncram_component.power_up_uninitialized = "FALSE",
-////////// not in DE1 //////////
+// NOT IN DE1
 		altsyncram_component.read_during_write_mode_port_a = "NEW_DATA_NO_NBE_READ",
-////////// not in DE1 END //////////
 		altsyncram_component.widthad_a = 9,
 		altsyncram_component.width_a = 16,
 		altsyncram_component.width_byteena_a = 2;
@@ -130,7 +127,7 @@ endmodule
 // Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
 // Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
 // Retrieval info: PRIVATE: CLOCK_ENABLE_INPUT_A NUMERIC "1"
-// Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_A NUMERIC "1"
+// Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_A NUMERIC "0"
 // Retrieval info: PRIVATE: Clken NUMERIC "1"
 // Retrieval info: PRIVATE: DataBusSeparated NUMERIC "1"
 // Retrieval info: PRIVATE: IMPLEMENT_IN_LES NUMERIC "0"
@@ -157,7 +154,7 @@ endmodule
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: BYTE_SIZE NUMERIC "8"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "NORMAL"
-// Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "NORMAL"
+// Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone V"
 // Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
@@ -185,9 +182,9 @@ endmodule
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 16 0 @q_a 0 0 16 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ram16X512_bb.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ram16x512_bb.v FALSE
 // Retrieval info: LIB_FILE: altera_mf
