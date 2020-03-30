@@ -5,7 +5,8 @@ Minimal OpenMSP430 hardware extensions for isolation and attestation.
 
 ## Overview
 
-Detailed README coming soon.. For now, please refer to the Sancus [website](https://distrinet.cs.kuleuven.be/software/sancus/install.php) for installation instructions.
+Detailed information is provided in [Repos](/Repos/) and in our docs on Sancus.
+Apart from that, the Sancus [website](https://distrinet.cs.kuleuven.be/software/sancus/install.php) can be referred for installation instructions.
 
 ## Port to Altera-DE10 board
 
